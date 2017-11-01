@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uzman.myapplication.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="39dp">
+        <Button
+            android:id="@+id/btn_arti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_alignBaseline="@+id/btn_eksi"
+            android:layout_alignBottom="@+id/btn_eksi"
+            android:layout_toRightOf="@+id/btn_eksi"
+            android:layout_toEndOf="@+id/btn_eksi" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_alignBaseline="@+id/txt_first"
+            android:layout_alignBottom="@+id/txt_first"
+            android:layout_alignLeft="@+id/btn_eksi"
+            android:layout_alignStart="@+id/btn_eksi" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="82dp"
+            android:layout_alignBaseline="@+id/txt_second"
+            android:layout_alignBottom="@+id/txt_second"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/txt_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/txt_second"
+            android:layout_alignStart="@+id/txt_second" />
+
+        <EditText
+            android:id="@+id/txt_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="62dp"
+            android:layout_below="@+id/txt_first"
+            android:layout_alignLeft="@+id/txt_result"
+            android:layout_alignStart="@+id/txt_result"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="141dp"
+            android:layout_alignBaseline="@+id/txt_result"
+            android:layout_alignBottom="@+id/txt_result"
+            android:layout_alignLeft="@+id/btn_eksi"
+            android:layout_alignStart="@+id/btn_eksi" />
+
+        <EditText
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="127dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_below="@+id/txt_second"
+            android:layout_toRightOf="@+id/btn_eksi"
+            android:layout_toEndOf="@+id/btn_eksi"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:id="@+id/btn_eksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="209dp"
+            android:layout_alignBaseline="@+id/btn_bolme"
+            android:layout_alignBottom="@+id/btn_bolme"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp" />
+
+        <Button
+            android:id="@+id/btn_carpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="209dp"
+            android:layout_alignBaseline="@+id/btn_bolme"
+            android:layout_alignBottom="@+id/btn_bolme"
+            android:layout_toRightOf="@+id/btn_bolme"
+            android:layout_toEndOf="@+id/btn_bolme" />
+
+        <Button
+            android:id="@+id/btn_bolme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="272dp"
+            android:layout_below="@+id/txt_result"
+            android:layout_toRightOf="@+id/btn_arti"
+            android:layout_toEndOf="@+id/btn_arti"
+            android:layout_marginTop="27dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
+
